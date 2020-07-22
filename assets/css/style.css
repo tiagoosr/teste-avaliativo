@@ -53,5 +53,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Asap";
+  	font-family: "Asap";
+}
+
+p{
+    line-height: 1.4;
+    font-size: 20px;
+    font-family: "Sarabun";
+	font-weight: normal;
+	margin-top: 20px;
+	color: #FFF;
 }
