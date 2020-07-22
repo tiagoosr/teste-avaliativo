@@ -11,50 +11,92 @@
     
 </head>
 <body>
-    <div class="ontainer-fluid" >
+    <div class="container-fluid" >
+
         <header class="cabecalho">
-            
-                <div class="info" style="padding-left: 8%;padding-right: 8%;height: 55px;background-color: #FFF;display: flex;justify-content: space-between;">
-                    <div class="logo-marca" style="display: flex;align-items: center;">
-                        <img src="/assets/images/logo.png"  class="logo">
-                        
-                    </div>
-                    <div class="nome-curso" style="font-size: 14px;display: flex;align-items: center;">
-                        <h2 style="color: #004178;">PREVENÇÃO À LAVAGEM DE DINHEIRO E AO FINANCIAMENTO DO TERRORISMO</h2>
-                     </div>
+            <div class="cabecalho-info">
+                <div class="logo-marca">
+                    <img src="/assets/images/logo.png"  class="logo">
                 </div>
-          
-            
+                <div class="nome-curso">
+                    <h2 class="nome-curso-info">PREVENÇÃO À LAVAGEM DE DINHEIRO E AO FINANCIAMENTO DO TERRORISMO</h2>
+                </div>
+            </div>
         </header>
 
-        <main class="banner-intro" style="background-image:url('./assets/images/01_topo.png'); height: 100vh">
-            <div style="margin-left: 15px;margin-right: 15px;">
-                <div style="padding-top: 128px;padding-left: 10%;width: 40%;">
-                    <div class="banner-conteudo" style="">
-                        <h1 class="titulo-principal" style="font-size: 46px;color: #FFF;font-weight: bolder;">INTRODUÇÃO</h1>
-                        <p>A reputação de uma Instituição Financeira é construída por meio de políticas e boas práticas que reforçam a credibilidade do cliente no seu banco. Vamos conhecer, no vídeo a seguir, por que é tão importante que a instituição crie ações para a Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo – PLDFT.</p>
-                    </div>
-                   
-                 
-                        <button class="abre-modal-video" id="abre-video" style="margin-top: 86px;width: 262px; height: 60px;;padding: 23px;;border-radius: 100px;border: none !important;font-size: 14px;background-color: #FFF;cursor: pointer;color: #004178;font-weight: 600;outline:none; font-family: Sarabun;display: flex;flex-direction: row;align-items: center; justify-content: ;">
-                            <div style="margin-left: 20%;">
+        <main >
+            <div class="background-container-1">
+                <div class="banner-intro">
+
+                    <div class="container-intro">
+
+                        <div class="banner-conteudo">
+                            <h1 class="titulo-principal">INTRODUÇÃO</h1>
+                            <p>A reputação de uma Instituição Financeira é 
+                            construída por meio de políticas e boas práticas
+                            que reforçam a credibilidade do cliente no seu banco.
+                            Vamos conhecer, no vídeo a seguir, por que é tão importante 
+                            que a instituição crie ações para a Prevenção à Lavagem de Dinheiro
+                            e ao Financiamento do Terrorismo – PLDFT.
+                            </p>
+                        </div>
+
+                        <button type="button" onclick="playVideo()" 
+                                class="btn btn-abrir-video" data-toggle="modal"
+                                data-target="#modal-video" class="abre-modal-video">
+                            <div class="btn-texto-video">
                                 ASSISTIR AO VÍDEO
                             </div>
-                            
-                            <div style="height: 46px;width: 46px;background-color: #004178;border-radius: 100px;position: absolute ;left: 26%;">
-                                <div style="justify-items: center;margin-top: 35%;margin-left: 5%;">
+                            <div class="btn-play">
+                                <div class="btn-play-icon">
                                     <img src="/assets/images/play.png">
-                                </div>
-                                
+                                </div>  
                             </div>
                         </button>
-                    
-                </div>
-          
+
+                        <div class="modal" id="modal-video" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content ">
+                                    
+                                    <div>
+                                        <button type="button" onclick="closeVideo()" class="close d-flex justify-content-end " data-dismiss="modal" >
+                                            <div>
+                                                <span aria-hidden="true">&times;</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="modal-body" >
+                                        <video id="reproduzir-video"width="100%" height="100%" src="assets/videos/IN002_M02.mp4"></video>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            
+            <div class="background-container-2">
+                
+            </div>
+            <div class="background-container-3">
+                
+            </div>
         </main>
+
     </div>
+    <script>
+        var video = document.getElementById("reproduzir-video");
+        function playVideo(){
+            if(video.paused){
+                video.play();
+            }
+        }
+        function closeVideo(){
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

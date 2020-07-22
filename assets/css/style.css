@@ -64,3 +64,115 @@ p{
 	margin-top: 20px;
 	color: #FFF;
 }
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+.cabecalho-info {
+	padding-left: 8%;
+	padding-right: 8%;
+	height: 55px;
+	background-color: #FFF;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-marca {
+	display: flex;
+	align-items: center;
+}
+.nome-curso {
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+.nome-curso-info {
+	color: #004178;
+}
+
+.background-container-1 {
+	background-image:url('../images/imagem-fundos/01_topo.png'); 
+	height: 100vh;
+	background-size: cover;
+	
+}
+.background-container-1::before {
+	content: "";
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  /* background-image: url(../data/img/imagens-fundos/gradient.png); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+	background-image:url('../images/imagem-fundos/gradient.png'); 
+	/* height: 100vh; */
+}
+/* .background-container-2 {
+	background-image:url('../images/imagem-fundos/bg_01.png'); 
+	height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+} */
+
+.background-container-3 {
+	background-image:url('../images/imagem-fundos/bg_01.png'); 
+	height: 100vh;
+	background-size: cover;
+}
+
+.banner-intro {
+	margin-left: 15px;
+	margin-right: 15px;
+	
+}
+
+.container-intro {
+	padding-top: 128px;
+	padding-left: 10%;
+	width: 48%;
+}
+
+.titulo-principal {
+	font-size: 46px;
+	color: #FFF;
+	font-weight: bolder;
+}
+
+.btn-abrir-video {
+	margin-top: 86px;
+	width: 262px; 
+	height: 60px;
+	padding: 23px;
+	border-radius: 100px;
+	border: none !important;
+	font-size: 14px;
+	background-color: #FFF;
+	cursor: pointer;
+	color: #004178;
+	font-weight: 600;
+	outline:none;
+	font-family: "Sarabun";
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.btn-texto-video {
+	margin-left: 20%;
+}
+.btn-play {
+	height: 46px;
+	width: 46px;
+	background-color: #004178;
+	border-radius: 100px;
+	position: absolute;
+	left: 26.2%;
+}
+.btn-play-icon {
+	justify-items: center;
+	margin-top: 35%;
+	margin-left: 5%;
+}
