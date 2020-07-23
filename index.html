@@ -170,10 +170,11 @@
             </div>
 
             <div class="background-container-3">
-                <div style="position: absolute;margin-top: 80px;margin-left: 15px; margin-right: 15px;">
-                    <div style="margin-left: 18%;margin-right: 18%;">
+                <div class="banner-intro-3">
+                    <div class="banner-conteudo-3">
+
                         <div>
-                            <p style="color: #2a2a2a; margin-top: 0px;">
+                            <p class="texto-informativo-3">
                                 Além das determinações das leis, há a atuação dos <strong>órgãos reguladores</strong>,
                                 que
                                 <strong>estabelecem normativos</strong> para que as Instituições Financeiras e Não
@@ -184,12 +185,12 @@
                                 exposição. Confira, a seguir, os órgãos e suas regulamentações.
                             </p>
                         </div>
-                        <div style="margin-top: 70px;">
-                            <h2 class="titulo bloco"
-                                style="font-size: 38px; font-family: 'Asap';font-weight: bold;color: #004178;">
+
+                        <div class="container-titulo-princ-3">
+                            <h2 class="titulo-principal-3">
                                 ÓRGÃOS REGULADORES
                             </h2>
-                            <P style="color: #2a2a2a;">
+                            <P class="texto-info-titu-principal">
                                 Esses órgãos estabelecem a normatização e procedimentos para a PLDFT. O conjunto de
                                 normas que eles elaboram deve ser seguido e aplicado pelas pessoas obrigadas, isto é,
                                 aquelas que têm a obrigação legal de prevenir e combater crimes de lavagem de dinheiro e
@@ -197,23 +198,128 @@
                                 de atuação.
                             </P>
                         </div>
+
                         <div>
-                            <h2
-                                style="font-size: 32px;font-family: 'Asap';font-weight: bold;padding-top: 20px;color: #004178;">
-                                Áreas de atuação
+                            <div>
+                                <h2 class="subtitulo-3">
+                                    Áreas de atuação
+                                </h2>
+                            </div>
+
+                            <div class="contain-dropdown">
+                                <div class="contain-dropdown-interno">
+                                    <button type="button" class="btn-dropdown" onclick="openDropdown1()">
+                                        <p class="btn-dropdown-info">01</p>
+                                    </button>
+                                    <button type="button" class="btn-dropdown" onclick="openDropdown2()">
+                                        <p class="btn-dropdown-info">02</p>
+                                    </button>
+                                    <button type="button" class="btn-dropdown">
+                                        <p class="btn-dropdown-info">03</p>
+                                    </button>
+                                    <button type="button" class="btn-dropdown">
+                                        <p class="btn-dropdown-info">04</p>
+                                    </button>
+                                    <button type="button" class="btn-dropdown">
+                                        <p class="btn-dropdown-info">05</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="dropdown-1">
+                                <div class="borda-top-dropdown"></div>
+                                dropdown 1
+                            </div>
+
+                            <!-- <div id="dropdown-2">dropdown 2</div>
+                            <div id="dropdown-3">dropdown 3</div>
+                            <div id="dropdown-4">dropdown 4</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-exigencias">
+                <div class="container-exigencias-inter">
+                    <h2 class="subtitulo-exigencias">
+                        Principais exigências
+                    </h2>
+                    <p class="texto-info-exigencias">
+                        Os órgãos reguladores definem que, para um processo robusto de PLDFT, as instituições
+                        financeiras devem praticar o princípio “<strong>Conheça Seu Cliente</strong>” para avaliar
+                        se o <strong>perfil e a capacidade financeira</strong> do cliente estão <strong>condizentes
+                            com as movimentações dos recursos</strong>.
+                    </p>
+                </div>
+            </div>
+            <div class="background-container-4">
+                <div class="banner-intro-4">
+                    <div class="banner-conteudo-1">
+
+                        <div>
+                            <img src="/assets/images/img_01.png" width="429" height="375">
+                        </div>
+
+                        <div class="containter-info-1">
+
+                            <h2 class="titulo-principal-1">
+                                Conheça seu cliente
                             </h2>
+
+                            <ul>
+                                <li class="list-personalizada">Dados cadastrais</li>
+                                <li class="list-personalizada">Identificação da atividade principal</li>
+                                <li class="list-personalizada">Capacidade financeira (Renda, Faturamento, Patrimônio)
+                                </li>
+                                <li class="list-personalizada">Área geográfica de atuação</li>
+                                <li class="list-personalizada">Produtos e serviços que irá utilizar</li>
+                                <li class="list-personalizada">Checagem de informações desabonadoras</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="banner-conteudo-2">
+
+                        <div>
+                            <img src="/assets/images/img_02.png" width="429" height="375">
+                        </div>
+
+                        <div class="containter-info-2">
+
+                            <h2 class="titulo-principal-2">
+                                Monitoramento de transações
+                            </h2>
+
+                            <ul>
+                                <li class="list-personalizada-2">
+                                    Checagem de contrapartes em listas restritivas e de bloqueio de valores,
+                                    quando aplicável
+                                </li>
+                                <li class="list-personalizada-2">
+                                    Identificação de transações para comunicação automática, conforme limites
+                                    definidos, por exemplo, saques ou depósitos em espécie
+                                </li>
+                                <li class="list-personalizada-2">
+                                    Monitoramento da atividade financeira, visando identificar incompatibilidades
+                                    entre a movimentação dos recursos e o perfil/capacidade financeira do cliente
+                                </li>
+
+
                         </div>
 
                     </div>
 
                 </div>
             </div>
-
         </main>
 
     </div>
     <script>
         var video = document.getElementById("reproduzir-video");
+        var dropdown1 = document.getElementById("dropdown-1");
+        var dropdown2 = document.getElementById("dropdown-2");
 
         function playVideo() {
             if (video.paused) {
