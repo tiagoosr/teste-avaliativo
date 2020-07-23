@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 /* Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -53,17 +140,18 @@ h3,
 h4,
 h5,
 h6 {
-  	font-family: "Asap";
+	font-family: "Asap";
 }
 
-p{
-    line-height: 1.4;
-    font-size: 20px;
-    font-family: "Sarabun";
+p {
+	line-height: 1.4;
+	font-size: 20px;
+	font-family: "Sarabun";
 	font-weight: normal;
 	margin-top: 20px;
 	color: #FFF;
 }
+
 strong {
 	font-weight: bold;
 }
@@ -86,58 +174,86 @@ strong {
 	display: flex;
 	align-items: center;
 }
+
 .nome-curso {
 	font-size: 14px;
 	display: flex;
 	align-items: center;
 }
+
 .nome-curso-info {
 	color: #004178;
 }
 
 .background-container-1 {
-	background-image:url('../images/imagem-fundos/01_topo.png'); 
+	background-image: url('../images/imagem-fundos/01_topo.png');
 	height: 100vh;
 	background-size: cover;
-	
+
 }
 
 .background-container-2 {
-	background-image:url('../images/imagem-fundos/bg_01.png'); 
+	background-image: url('../images/imagem-fundos/bg_01.png');
 	height: 100vh;
 	background-size: cover;
 	background-position: bottom center;
 	/* position: relative; */
-	
+
 }
+
 .background-container-2::before {
-	background-image:url('../images/imagem-fundos/gradient.png'); 
+	background-image: url('../images/imagem-fundos/gradient.png');
 	background-repeat: repeat-x;
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	background-size: contain;
-	
-	
-	
 }
-/* .background-container-3 {
-	background-image:url('../images/imagem-fundos/bg_01.png'); 
+
+.background-container-3 {
+	background-image: url('../images/imagem-fundos/bg_02.png');
 	height: 100vh;
 	background-size: cover;
-} */
+	background-position: bottom center;
+
+}
+
+.background-container-3::before {
+	background-image: url('../images/imagem-fundos/gradient.png');
+	background-repeat: repeat-x;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: contain;
+
+}
 
 .banner-intro {
 	margin-left: 15px;
 	margin-right: 15px;
-	
+
 }
 
 .container-intro {
 	padding-top: 128px;
 	padding-left: 10%;
+	/* margin-left: -48%; */
 	width: 48%;
+	position: relative;
+	animation-name: deslizar;
+	animation-duration: 1s;
+}
+
+@keyframes deslizar {
+	0% {
+		left: -48%;
+	}
+
+	100% {
+		left: 1px;
+	}
 }
 
 .titulo-principal {
@@ -148,7 +264,7 @@ strong {
 
 .btn-abrir-video {
 	margin-top: 86px;
-	width: 262px; 
+	width: 262px;
 	height: 60px;
 	padding: 23px;
 	border-radius: 100px;
@@ -158,26 +274,104 @@ strong {
 	cursor: pointer;
 	color: #004178;
 	font-weight: 600;
-	outline:none;
+	outline: none;
 	font-family: "Sarabun";
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding: 0px;
 }
 
 .btn-texto-video {
-	margin-left: 20%;
+	margin-left: 65px;
+	/* width: 60%; */
 }
+
 .btn-play {
 	height: 46px;
 	width: 46px;
 	background-color: #004178;
 	border-radius: 100px;
-	position: absolute;
-	left: 26.2%;
+	/* position: absolute; */
+	/* left: 26.2%; */
+	margin-left: 25px;
 }
+
 .btn-play-icon {
 	justify-items: center;
 	margin-top: 35%;
 	margin-left: 5%;
+}
+
+.banner-intro-2 {
+
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 95px;
+	position: absolute;
+}
+
+.banner-conteudo-2 {
+	margin-left: 16%;
+	margin-right: 16%
+}
+
+.titulo-principal-2 {
+	color: #004178;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px
+}
+
+.texto-informativo-2 {
+	color: #2a2a2a;
+}
+
+.container-carrosel {
+	margin-top: 50px !important;
+}
+
+.carousel-slide {
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+}
+
+.carousel-position {
+	height: 15px !important;
+	width: 15px !important;
+	border-radius: 100% !important;
+	background-color: #4f8fc4 !important;
+}
+
+.carousel-container {
+	box-shadow: 0px 0px 20px #888888 !important;
+}
+
+.carousel-itens {
+	height: 285px !important;
+	background-color: #FFF !important;
+}
+
+.carousel-titulo {
+	text-align: center;
+	font-size: 30px;
+	color: #004178;
+	font-weight: 600;
+	margin-top: 80px;
+}
+
+.carousel-lei {
+	color: #004178 !important;
+	text-decoration: underline !important;
+}
+
+.carousel-informativo {
+	color: #000;
+	text-align: center;
+}
+
+.carousel-footer {
+	height: 4px;
+	width: 100%;
+	background-color: #004178;
 }
